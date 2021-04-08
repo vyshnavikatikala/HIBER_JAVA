@@ -17,7 +17,7 @@ public class HibernateClient {
 		Configuration cfg = new Configuration();
 
 		// Step 2 - Build SessionFactory
-		SessionFactory factory = cfg.configure().buildSessionFactory();
+		SessionFactory factory = cfg.configure().buildSessionFactory(); // heavy object to talk to database
 
 		// Step 3 - Create a session (Local Cache - Client specific)
 		Session session = factory.openSession();
