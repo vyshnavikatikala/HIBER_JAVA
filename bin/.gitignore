@@ -1,12 +1,14 @@
 /book.hbm.xml
+/comppack/
 /hiberjava/
 /hibernate.cfg.xml
 /inher.hbm.xml
 /inher2.hbm.xml
 /inher3.hbm.xml
 /inherpack/
-/utility/
+/manytomany.hbm.xml
+/manytomany/
 /onetomany.hbm.xml
 /onetomany/
-/manytomany/
-/manytomany.hbm.xml
+/utility/
+/compkey.hbm.xml
