@@ -31,13 +31,14 @@
         <!-- Drop and re-create the database schema on startup -->
         
           <!-- <property name="hbm2ddl.auto">create</property>--> <!-- To create schema for first time -->
-          <property name="hbm2ddl.auto">create</property>  <!-- To read the object or make any changes to it -->
+          <property name="hbm2ddl.auto">update</property>  <!-- To read the object or make any changes to it -->
 
 		<!-- <mapping resource="book.hbm.xml"/> -->
 		<!-- <mapping resource="inher.hbm.xml"/> -->
 		<!-- <mapping resource="inher2.hbm.xml"/> -->
 		<!-- <mapping resource="inher3.hbm.xml"/> -->
-		<mapping resource="onetomany.hbm.xml"/>
+		<!-- <mapping resource="onetomany.hbm.xml"/> -->
+		<mapping resource="manytomany.hbm.xml"/>
 		
 		<!-- <mapping class="compkeypack.Invoice"/>
 		<mapping class="annopack.pojopack.Employee"/> -->

@@ -8,3 +8,5 @@
 /utility/
 /onetomany.hbm.xml
 /onetomany/
+/manytomany/
+/manytomany.hbm.xml

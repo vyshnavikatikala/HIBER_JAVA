@@ -32,8 +32,8 @@ public class OneToManyClient {
 		emp.setAddresses(addresses);
 
 		session.save(emp);
-		session.save(add1);
-		session.save(add2);
+//		session.save(add1);
+//		session.save(add2);
 
 		HibernateUtility.closeSession(null);
 
