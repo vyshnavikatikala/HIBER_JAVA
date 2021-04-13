@@ -11,7 +11,7 @@
         <property name="empname" />
         <property name="empsal" />
         
-      <set name="addresses" table ="ADDRESS" lazy="false">
+      <set name="addresses" table ="ADDRESS" lazy="false" inverse="true">
         <key column="EMPLOYEE_EID"/>
         <one-to-many class="onetomany.Address"/>
       </set> 
