@@ -14,19 +14,13 @@ public class InherReadClient {
 
 		Query query = session.createQuery("from ShoeFactory");
 
-		List list = query.list();
+		List<ShoeFactory> list = query.list();
 
-		Iterator iter = list.iterator();
+		Iterator<ShoeFactory> iter = list.iterator();
 
 		while (iter.hasNext()) {
-			Object factory = iter.next();
-			// System.out.println(factory.getSid()+":"+factory.getName());
-			if (factory instanceof BataShoeFactory) {
-				BataShoeFactory bsf = (BataShoeFactory) factory;
-				System.out.println(bsf.getSid() + ":" + bsf.getName() + ":" + bsf.getBataName());
-			} else if (factory instanceof LakhaniShoeFactory) {
-//				Lakhani
-			}
+			ShoeFactory factory = iter.next();
+			factory.visit();
 		}
 	}
 }
